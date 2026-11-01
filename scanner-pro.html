@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scanner Pro — Anna Zhernoklieieva</title>
+<meta name="description" content="A task-based onboarding concept for Scanner Pro (iPhone), tested in Maze.">
+<meta property="og:title" content="Scanner Pro — case study">
+<meta property="og:image" content="https://anna-design-1.github.io/img/og.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111318'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='18' text-anchor='middle' fill='white'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Red+Hat+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="container">
+  <nav class="nav">
+    <a class="logo" href="./">Anna Zhernoklieieva</a>
+    <a href="./#work">Work</a>
+    <a href="./#about">About</a>
+    <a href="./#contact">Contact</a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="case-hero">
+    <div>
+      <p class="eyebrow">Concept · iOS (iPhone) · Team project</p>
+      <h1>Scanner Pro</h1>
+      <p class="sub">Onboarding that starts with the user's task. A team concept redesign of the first-run experience in Scanner Pro (iPhone), based on a product brief from Readdle. The goal is to lead new users to their first valuable action, and from there to a trial.</p>
+    </div>
+    <dl class="summary">
+      <div><dt>Product</dt><dd>Scanner Pro by Readdle: an app for iPhone and iPad for scanning, organizing and sharing documents. Core features are free; advanced ones are in a paid Plus subscription</dd></div>
+      <div><dt>Problem</dt><dd>Per the brief, only 1 in 10 new users starts a free trial or subscription within 24 hours of install. Onboarding lists features but doesn't account for what each user came to do</dd></div>
+      <div><dt>Solution</dt><dd>Onboarding asks about the user's task and leads to the relevant scenario. The expense-report path is designed end to end</dd></div>
+      <div><dt>What we did</dt><dd>Survey (11 people), competitor analysis, task-based onboarding for iPhone, interactive prototype, usability test in Maze (9 people), iteration, A/B test plan</dd></div>
+      <div><dt>Status</dt><dd>Concept, September 2026. Prototype tested in Maze; not shipped, no production data</dd></div>
+      <div><dt>Result</dt><dd>66.7% task success (incl. early technical drop-offs), 4.2 / 5 ease rating. The test found the main friction point, finding "Create report". The flow was redesigned around it but not yet re-tested</dd></div>
+    </dl>
+  </section>
+
+  <figure class="block"><img src="img/sp-hero.webp" alt="Onboarding flow: welcome, task question, setup, done" width="1300" height="742"></figure>
+
+  <section class="block two">
+    <div>
+      <p class="eyebrow">Context</p>
+      <p>Scanner Pro has been on the market for 17 years. It offers many tools: scanning, OCR, expense reports, export, Workflows and more. Users come with different tasks: scanning a document, editing and signing it, building a report, working with expenses.</p>
+      <p style="margin-top:20px"><b>The business problem.</b> The brief set the baseline at 10% conversion from install to trial or subscription within 24 hours. No funnel, segment or traffic-source breakdown was available, so we separated facts from assumptions throughout.</p>
+    </div>
+    <div class="stack">
+      <div class="tile accent"><p class="eyebrow">Baseline, per the brief</p><p class="stat">10%</p><p>of new users start a trial or subscription within 24 hours of install</p></div>
+      <div class="callout"><p class="eyebrow muted">Brief metrics</p>Primary: install → trial / subscription conversion within 24 hours<br>Secondary: activation, the share of new users who create or import their first scan</div>
+      <div class="callout"><p class="eyebrow muted">Constraints</p>iPhone only, following Apple Human Interface Guidelines<br>No changes to features, prices or the paywall offer<br>Collect only the data needed for the first experience, nothing personal or sensitive</div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <p class="eyebrow">Starting hypothesis and what research showed</p>
+      <h2>Users know what they want to do, but not always which tool does it</h2>
+      <p>In the current flow, onboarding shows features, then the paywall, then the home screen. From there, users find the right tool on their own. We assumed this means users need more time to reach their first value.</p>
+    </div>
+    <figure><img src="img/sp-flows.webp" alt="Current flow versus the flow we set out to test" width="1300" height="329" loading="lazy"><figcaption>Current flow vs the flow we set out to test: value comes before the paywall.</figcaption></figure>
+    <div class="two" style="margin-bottom:40px">
+      <div><p class="eyebrow">Competitors</p><p>Scan Me, CamScanner, Adobe Scan and iOS Notes more often lead the user through a concrete task than through a list of features.</p></div>
+      <div><p class="eyebrow">Survey</p><p>Google Form, 11 respondents: students, freelancers, office workers, small business owners. It focused on how people handle receipts. It's a small, directional sample.</p></div>
+    </div>
+    <div class="tiles">
+      <div class="tile"><p class="stat">9 / 11</p><p>regularly keep receipts</p></div>
+      <div class="tile"><p class="stat">6 / 11</p><p>combine information from several receipts into one report</p></div>
+      <div class="tile"><p class="stat">3 / 5</p><p>average convenience rating of their current process</p></div>
+    </div>
+    <p style="margin:32px 0 40px">Organizing receipts often stays manual: searching, sorting, moving data into spreadsheets or other tools.</p>
+    <div class="dark">
+      <p class="eyebrow">Refined hypothesis</p>
+      <h3>If onboarding identifies the user's task and leads them to the relevant scenario, they will find the right tool faster and complete the target action.</h3>
+      <p>Focus segment: users who work with expenses.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-head"><p class="eyebrow">Decision 01</p><h2>Ask about the task before showing features</h2></div>
+    <div class="side">
+      <div class="stack">
+        <div class="callout red"><p class="eyebrow red">Problem</p>One onboarding for everyone explains the product but doesn't account for what each user came to do.</div>
+        <div class="callout"><p class="eyebrow muted">Cost</p>Extra onboarding steps (the question, setup and summary screens), in exchange for a relevant first experience.</div>
+      </div>
+      <div class="leads">
+        <p class="eyebrow">Decision</p>
+        <p>After the welcome screen, onboarding asks one question: <i>"What do you do most often with documents?"</i>. A short setup step follows, then a summary of what's now available, e.g. expenses and receipts, reports, quick access to documents.</p>
+      </div>
+    </div>
+    <figure><img src="img/sp-task.webp" alt="Task question, setup and done screens" width="1300" height="812" loading="lazy"><figcaption>Task question → setup → "Done!" with the tools that match the chosen task.</figcaption></figure>
+  </section>
+
+  <section class="block">
+    <div class="block-head"><p class="eyebrow">Decision 02</p><h2>Design one scenario end to end and plan the paywall after the first report</h2></div>
+    <div class="side">
+      <div class="stack">
+        <div class="callout accent"><p class="eyebrow">Why expenses</p>In the survey, receipts were a frequent, often manual job.</div>
+      </div>
+      <div class="leads">
+        <p class="eyebrow">Decision</p>
+        <p><b>Full path for the segment:</b> we prototyped choosing the task, selecting documents, creating the report and saving it.</p>
+        <p><b>Paywall after the first expense report</b> in the target flow: Onboarding → Segmentation → Relevant scenario → Test scan → Expense report → Paywall → Trial. The paywall offer stays unchanged, as the brief required. The Maze test ended at report creation, so paywall placement wasn't tested.</p>
+      </div>
+    </div>
+    <figure><img src="img/sp-keyflow.webp" alt="Key flow: choose task, select receipts, create report, save" width="1300" height="681" loading="lazy"><figcaption>The expense path in the prototype: choose the task, select receipts, create the report, save it.</figcaption></figure>
+  </section>
+
+  <section class="block">
+    <div class="block-head"><p class="eyebrow">Decision 03</p><h2>After testing: remove the search for "Create report"</h2></div>
+    <div class="side">
+      <div class="stack">
+        <div class="callout"><p class="eyebrow muted">What we tested (v1)</p>After onboarding, users still went through Home → "My scans" → tool search → documents → report.</div>
+        <div class="callout red"><p class="eyebrow red">Main friction point</p>Finding "Create report".</div>
+      </div>
+      <div class="leads">
+        <p class="eyebrow">What Maze showed</p>
+        <p><b>Onboarding.</b> Users engaged with the options but didn't always pick the one leading to the scenario.</p>
+        <p><b>"My scans".</b> Attention went to documents and the bottom navigation. Users looked for the next action but didn't find the tool right away.</p>
+        <p><b>Receipt selection.</b> Users selected documents easily, but some didn't find the report tool right away.</p>
+        <div class="callout accent"><p class="eyebrow">Decision (v2)</p>After the user picks a task, the app goes straight to document selection and report creation. Home and "My scans" are no longer in the path.</div>
+      </div>
+    </div>
+    <figure><img src="img/sp-heatmaps.webp" alt="Heatmaps of onboarding, My scans and receipt selection" width="1300" height="845" loading="lazy"><figcaption>Heatmaps of the three screens where users got lost. Heatmap screenshots show the Ukrainian prototype used in the test.</figcaption></figure>
+    <figure><img src="img/sp-v1v2.webp" alt="v1 versus v2 path" width="1300" height="329" loading="lazy"><figcaption>v1 → v2: Home, "My scans" and the tool search are removed; the task choice leads straight to receipt selection and the report.</figcaption></figure>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <p class="eyebrow">Validation</p>
+      <h2>Maze usability test of v1</h2>
+      <p>9 respondents (students, freelancers, office workers), 1 scenario: collect documents and create an expense report.</p>
+    </div>
+    <div class="tiles">
+      <div class="tile"><p class="stat">66.7%</p><h3>Success rate</h3><p>Includes early technical drop-offs</p></div>
+      <div class="tile"><p class="stat">4.2 / 5</p><h3>Ease of creating a report</h3></div>
+      <div class="tile"><p class="stat">173.9 s</p><h3>Average completion time</h3></div>
+    </div>
+    <p style="margin:32px 0 40px">The current flow wasn't tested in the same setup, so these numbers describe v1 on its own, not an improvement. v2 hasn't been tested yet.</p>
+    <p class="eyebrow">Next step: A/B test</p>
+    <div class="tiles two-col">
+      <div class="tile"><p class="stat" style="color:var(--muted)">A</p><h3>Current flow</h3><p>Onboarding → Home → tool search</p></div>
+      <div class="tile accent"><p class="stat">B</p><h3>Task-based flow</h3><p>Goal → relevant tool → first report</p></div>
+    </div>
+    <div class="callout" style="margin-top:20px"><p class="eyebrow muted">Test metrics (they differ from the brief's)</p>Primary: activation, measured as the first report created<br>Secondary: trial / subscription conversion, to check whether reaching value faster moves conversion</div>
+    <p style="margin-top:32px"><b>Expected impact:</b> less searching and a more relevant first experience may increase activation and trial conversion. This is the hypothesis for the A/B test, not a measured result.</p>
+  </section>
+
+  <section class="block dark">
+    <p class="eyebrow">What we'd do next</p>
+    <div class="cols">
+      <div><span class="num">01</span><h4>Test v2</h4><p>in Maze with the same scenario and compare it to v1.</p></div>
+      <div><span class="num">02</span><h4>Rework the onboarding options.</h4><p>Some users didn't pick the option that leads to their scenario.</p></div>
+      <div><span class="num">03</span><h4>Run the A/B test</h4><p>against the current flow.</p></div>
+    </div>
+  </section>
+
+  <nav class="next-case"><a href="pulseboard.html">← Pulseboard</a><a href="spoton.html">Next: SpotOn →</a></nav>
+</main>
+</body>
+</html>
